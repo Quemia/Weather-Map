@@ -1,18 +1,32 @@
 import React from "react";
+import CardTemp from "./components/cards/card";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 
 function App() {
-  return(
-    <div>
-      <h3>Cilma nas suas coordenadas: (Exemplo)</h3>
-      <hr/>
-      <ul>
-        <li>Temperatura atual: x ºC</li>
-        <li>Temperatura máxima: x ºC</li>
-        <li>Temperatura mínima: x ºC</li>
-        <li>Pressão: x hps</li>
-        <li>Umidade: x%</li>
-      </ul>
-    </div>
+  return (
+    <Container maxWidth="md">
+      <Box sx={{ flexGrow: 1 }}>
+        <Toolbar>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              my: 2,
+              flexGrow: 1,
+              textAlign: "center",
+              fontFamily: "Outfit",
+            }}
+            color="#042d54"
+          >
+            Clima nas suas coordenadas:
+          </Typography>
+        </Toolbar>
+      </Box>
+      <CardTemp />
+    </Container>
   );
 }
 
