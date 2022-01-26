@@ -6,6 +6,13 @@
 
 App that shows the user's weather using geographic location.
 
+
+
+https://user-images.githubusercontent.com/55935949/151248976-b9fe1504-b204-4b55-ba39-97423b2010cb.mp4
+
+
+
+
 ### Prerequisites :page_with_curl:
 
 ```
