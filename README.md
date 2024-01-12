@@ -6,6 +6,11 @@
 
 App that shows the user's weather using geographic location.
 
+
+![WhatsApp Video 2022-01-26 at 17 53 15](https://user-images.githubusercontent.com/55935949/151250264-06b42436-cc47-425b-a2b9-4b2df3032489.gif)
+
+
+
 ### Prerequisites :page_with_curl:
 
 ```
