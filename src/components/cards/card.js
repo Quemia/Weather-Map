@@ -9,19 +9,42 @@ const CardTemp = ({ weather }) => {
         mx: "auto",
         py: 1,
         px: 2,
-        width: 400,
-        height: 330,
+        width: "40%",
+        padding: "16px 0 16px 20px",
         backgroundColor: "#042d54",
         borderRadius: 3,
+        "@media screen and (max-width:580px)": {
+          width: "80%",
+        },
       }}
     >
-      <Typography sx={{ fontSize: 20, my: 1 }} color="#fff" gutterBottom>
+      <Typography
+        sx={{
+          flexGrow: 1,
+          fontFamily: "Outfit",
+          fontSize: 20,
+          my: 1,
+        }}
+        color="#fff"
+        gutterBottom
+      >
         {weather["name"]}, {weather["sys"]["country"]}
       </Typography>
-      <Typography variant="h2" color="#fff" component="div">
+      <Typography
+        sx={{
+          flexGrow: 1,
+          fontFamily: "Outfit",
+        }}
+        variant="h2"
+        color="#fff"
+        component="div"
+      >
         {weather["main"]["temp"]}ºC
       </Typography>
-      <Typography sx={{ mt: 1, mb: 2.5 }} color="#ffffffc2">
+      <Typography
+        sx={{ mt: 1, mb: 2.5, fontWeight: "semi-bold" }}
+        color="#ffffffc2"
+      >
         {weather["weather"][0]["description"]}
       </Typography>
       <Typography variant="body2">
